@@ -1,0 +1,1427 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta property="og:image" content="assets/fb-share.png"/>
+  <meta property="og:title" content="Questionário ELASI" />
+  <meta property="og:description"
+  content="Você conhece a Escala Likert de Atitudes Sociais em relação à Inclusão (ELASI)? No REA, responda o questionário e descubra o quanto você tem de atitudes favoráveis em relação a inclusão."/>
+  <meta property="og:tags" content="Libras, deficiência, inclusão, educação especial" />
+  <title>Univesp | Questionário ELASI</title>
+
+  <link rel="shortcut icon" href="http://apps.univesp.br/common/favicon.ico" type="image/x-icon"/>
+
+  <!-- Arquivos Bootstrap -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://code.jquery.com/ui/1.12.1/themes/smoothness/jquery-ui.css">
+
+  <!-- Ícones por Font Awesome -->
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
+  <!-- Ícones por Material Icons -->
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+  <!-- Tipografia institucional por Google Fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Barlow:300,400,700|Open+Sans:400,400i,700,700i" rel="stylesheet">
+
+  <!-- Compartilhamento por jsSocials -->
+  <link type="text/css" rel="stylesheet" href="https://cdn.jsdelivr.net/jquery.jssocials/1.4.0/jssocials.css" />
+  <link type="text/css" rel="stylesheet" href="https://cdn.jsdelivr.net/jquery.jssocials/1.4.0/jssocials-theme-minima.css" />
+
+  <!-- Animate CSS. Descomente se for utilizar. Caso contrário, remova. -->
+  <!-- <link rel="stylesheet" href="https://apps.univesp.br/common/animate.css"> -->
+
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="https://apps.univesp.br/common/rea-geral-2.0.css">
+  <link rel="stylesheet" href="stylesheets/main.css">
+  <link rel="stylesheet" href="stylesheets/nav_footer.css">
+
+</head>
+
+<body class="d-flex flex-column">
+
+  <!-- Utilizar essa DIV caso o REA não se adapte a todos os tamanhos de tela -->
+  <!-- <div class="esconder-tela-pequena"> -->
+
+  <!-- Menu -->
+  <nav>
+    <div class="container d-flex justify-content-end">
+
+      <div class="logo">
+
+        <a class="pularNavegacao" href="#conteudoPrincipal">Pular para Conteúdo Principal</a>
+        <a href="https://univesp.br/" target="_blank">
+          <img src="https://apps.univesp.br/common/traco-negativa.svg" alt="Link para site institucional. Logotipo da universidade formado pela palavra Univesp em letras maiúsculas, sendo a letra V estilizada.">
+          <!-- outras opções de img src: colorida-negativa.svg, traco-positiva.svg, traco-negativa.svg -->
+        </a>
+      </div>
+
+      <ul class="nav justify-content-end">
+
+        <!-- <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">
+            <i class="material-icons" aria-label="Menu de acessibilidade">accessibility_new</i>
+          </a>
+          <div class="dropdown-menu dropdown-menu-right">
+            ...
+          </div>
+        </li> -->
+
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">
+            <i class="material-icons" aria-label="Opções de Compartilhamento">share</i>
+          </a>
+          <div class="dropdown-menu dropdown-menu-right">
+            <div class="sharing" id="share-buttons"></div>
+          </div>
+        </li>
+
+      </ul>
+
+    </div>
+  </nav>
+
+  <!-- Conteúdo -->
+  <main id="conteudoPrincipal">
+    <!-- Introdução -->     
+    <div class="container etapa" id="intro">
+      <div class="text-center text-md-center" style="flex: 1 1 0">
+        <div style="position: relative;">
+        <img class="imagem_intro" src="assets/gestor.svg">
+        <img class="cadeirante" src="assets/cadeirante.svg">
+        </div>
+        <h1>QUESTIONÁRIO <i style="font-size: 1.3em;">ELASI</i></h1>
+        <p>
+          A Escala Likert de Atitudes Sociais em relação à Inclusão (ELASI) foi construída pelo prof. Dr. Sadao Omote, visando a favorecer o desenvolvimento de pesquisas sobre os contextos sociais nos quais se procura realizar a inclusão. Constitui-se de duas formas equivalentes, e para este exercício utilizamos a versão A, disponível <strong><a style="color: black;" href="https://repositorio.unesp.br/bitstream/handle/11449/114037/000800692.pdf?sequence=1&isAllowed=y">aqui</a></strong>.
+ 
+          <p>Preparado para descobrir o quanto as suas atitudes são favoráveis à inclusão? 
+          </p>
+          <div>
+        <button type="button" class="btn btn-primary avancarEtapa habilitado">Vamos lá?</button>
+      </div>
+    </div>
+    </div>
+
+
+    <!-- Autoavaliação Orientada -->
+    
+    <div class="container-fluid text-center etapa" id="autoaval_orientada">
+        <div class="cabecalho">
+          <div class="container-fluid text-center">
+            <h2>ANTES DE COMEÇAR</h2>
+          </div>
+        </div>
+            <div>
+              <p>
+               A seguir, você verá 35 enunciados, cada um com cinco opções que indicam a extensão em que você concorda com o enunciado ou discorda do seu conteúdo.</p>
+               <p>A sua tarefa consiste em ler atentamente cada enunciado e assinalar a opção que expressa melhor o seu grau de concordância ou discordância quanto a ele. As opções são:</p>
+                 <div class="container"> 
+                    <div class="row" style="      
+                      display: -ms-flexbox;
+                      display: flex;
+                      -ms-flex-align: center;
+                      align-items: center;
+                      -ms-flex-pack: center;
+                      justify-content: center;"> 
+                      <div class="col-12 col-lg-5" style="padding-top: 2%;">           
+                              <strong><p style="color: black;">Concordo inteiramente</p></strong>
+                              <strong><p style="color: black;">Concordo mais ou menos</p></strong>
+                              <strong><p style="color: black;">Nem concordo nem discordo</p></strong>
+                              <strong><p style="color: black;">Discordo mais ou menos</p></strong>
+                              <strong><p style="color: black;">Discordo inteiramente</p></strong>
+                      </div>
+                      <div class="col-12 col-lg-7">
+                        <img class="fundo" src="assets/fundo.svg">
+                      </div>
+                    </div>
+                  </div>
+                <p>Veja o seguinte exemplo:</p>
+                <h2><strong>A pena de morte deve ser instituída no Código Penal Brasileiro.</strong></h2>
+       
+                <p>Se você concorda inteiramente com o enunciado de que a pena de morte deve ser instituída no Código Penal Brasileiro, deve assinalar a opção <strong>concordo inteiramente</strong>; se concorda mais ou menos (apenas em parte), deve assinalar a opção <strong>concordo mais ou menos</strong>; se nem concorda nem discorda (é indiferente, não tem opinião formada a esse respeito, está completamente indeciso ou não compreendeu direito o enunciado), deve assinalar a opção <strong>nem concordo nem discordo</strong>; se discorda mais ou menos (em parte), deve assinalar a opção <strong>discordo mais ou menos</strong>; e se discorda inteiramente do enunciado, deve assinalar a opção <strong>discordo inteiramente</strong>.</p>
+            </div>
+            <div class="container-fluid text-center">
+              <button type="button" class="btn btn-primary avancarEtapa habilitado">Iniciar questionário</button>
+            </div>
+          </div>
+      </div>
+    <div class="container-fluid text-center etapa" id="autoaval_orientada">
+      <div class="cabecalho">
+        <h2 style="padding-bottom: 2%;">QUESTIONÁRIO</h2>
+      </div>
+      <div class="labels-header">
+        <div class="container">
+          <div>
+            <p>Concordo inteiramente</p>
+            <p>Concordo mais ou menos</p>
+            <p>Nem concordo nem discordo</p>
+            <p>Discordo mais ou menos</p>
+            <p>Discordo inteiramente</p>
+          </div>
+        </div>
+      </div>
+
+      <ol>
+
+        <li class="atual">
+          <div class="container">
+          
+            <p class="pergunta">
+              Devemos aceitar e conviver com a singularidade das pessoas.
+            </p>
+            <div class="input-group">
+              <div>
+                <input class="form-check-input clicavel favoraveis" type="radio" name="favoraveis1" id="favoraveis1" value="option5" >
+                <label class="form-check-label" for="favoraveis1">Concordo inteiramente</label>
+              </div>
+              <div>
+                <input class="form-check-input clicavel favoraveis" type="radio" name="favoraveis1" id="favoraveis2" value="option4">
+                <label class="form-check-label" for="favoraveis2">Concordo mais ou menos</label>
+              </div>
+              <div>
+                <input class="form-check-input clicavel favoraveis" type="radio" name="favoraveis1" id="favoraveis3" value="option3">
+                <label class="form-check-label" for="favoraveis3">Nem concordo nem discordo</label>
+              </div>
+              <div>
+                <input class="form-check-input clicavel favoraveis" type="radio" name="favoraveis1" id="favoraveis4" value="option2">
+                <label class="form-check-label" for="favoraveis4">Discordo mais ou menos</label>
+              </div>
+              <div>
+                <input class="form-check-input clicavel favoraveis" type="radio" name="favoraveis1" id="favoraveis5" value="option1">
+                <label class="form-check-label" for="favoraveis5">Discordo inteiramente</label>
+              </div>
+            </div>
+          </div>
+        </li>
+
+        <li>
+          <div class="container">
+          
+            <p class="pergunta">
+              O currículo deve ser adaptado para garantir ao aluno com deficiência a sua participação em classe comum.
+            </p>
+            <div class="input-group">
+              <div>
+                <input class="form-check-input clicavel desfavoraveis" type="radio" name="desfavoraveis2" id="desfavoraveis6" value="option1"  >
+                <label class="form-check-label" for="desfavoraveis6">Concordo inteiramente</label>
+              </div>
+              <div>
+                <input class="form-check-input clicavel desfavoraveis" type="radio" name="desfavoraveis2" id="desfavoraveis7" value="option2">
+                <label class="form-check-label" for="desfavoraveis7">Concordo mais ou menos</label>
+              </div>
+              <div>
+                <input class="form-check-input clicavel desfavoraveis" type="radio" name="desfavoraveis2" id="desfavoraveis8" value="option3">
+                <label class="form-check-label" for="desfavoraveis8">Nem concordo nem discordo</label>
+              </div>
+              <div>
+                <input class="form-check-input clicavel desfavoraveis" type="radio" name="desfavoraveis2" id="desfavoraveis9" value="option4">
+                <label class="form-check-label" for="desfavoraveis9">Discordo mais ou menos</label>
+              </div>
+              <div>
+                <input class="form-check-input clicavel desfavoraveis" type="radio" name="desfavoraveis2" id="desfavoraveis10" value="option5">
+                <label class="form-check-label" for="desfavoraveis10">Discordo inteiramente</label>
+              </div>
+          </div>
+        </li>
+        <li>
+          <div class="container">
+          
+            <p class="pergunta">
+              Com a inclusão, a pessoa com deficiência não tem o direito de optar por estudar em classe especial.
+            </p>
+            <div class="input-group">
+              <div>
+                <input class="form-check-input clicavel favoraveis" type="radio" name="favoraveis3" id="favoraveis11" value="option5"  >
+                <label class="form-check-label" for="favoraveis11">Concordo inteiramente</label>
+              </div>
+              <div>
+                <input class="form-check-input clicavel favoraveis" type="radio" name="favoraveis3"id="favoraveis12" value="option4">
+                <label class="form-check-label" for="favoraveis12">Concordo mais ou menos</label>
+              </div>
+              <div>
+                <input class="form-check-input clicavel favoraveis" type="radio" name="favoraveis3" id="favoraveis13" value="option3">
+                <label class="form-check-label" for="favoraveis13">Nem concordo nem discordo</label>
+              </div>
+              <div>
+                <input class="form-check-input clicavel favoraveis" type="radio" name="favoraveis3" id="favoraveis14" value="option2">
+                <label class="form-check-label" for="favoraveis14">Discordo mais ou menos</label>
+              </div>
+              <div>
+                <input class="form-check-input clicavel favoraveis" type="radio" name="favoraveis3" id="favoraveis15" value="option1">
+                <label class="form-check-label" for="favoraveis15">Discordo inteiramente</label>
+              </div>
+          </div>
+        </li>
+
+        <li>
+          <div class="container">
+          
+            <p class="pergunta">
+              Dentro do processo de escolarização, os alunos devem ser separados em categorias, de acordo com o nível de aproveitamento.
+            </p>
+            <div class="input-group">
+              <div>
+                <input class="form-check-input clicavel mentira" type="radio" name="mentira4" id="mentira16" value="option0"   >
+                <label class="form-check-label" for="mentira16">Concordo inteiramente</label>
+              </div>
+              <div>
+                <input class="form-check-input clicavel mentira" type="radio" name="mentira4" id="mentira17" value="option0">
+                <label class="form-check-label" for="mentira17">Concordo mais ou menos</label>
+              </div>
+              <div>
+                <input class="form-check-input clicavel mentira" type="radio" name="mentira4" id="mentira18" value="option1">
+                <label class="form-check-label" for="mentira18">Nem concordo nem discordo</label>
+              </div>
+              <div>
+                <input class="form-check-input clicavel mentira" type="radio" name="mentira4" id="mentira19" value="option1">
+                <label class="form-check-label" for="mentira19">Discordo mais ou menos</label>
+              </div>
+              <div>
+                <input class="form-check-input clicavel mentira" type="radio" name="mentira4" id="mentira20" value="option1">
+                <label class="form-check-label" for="mentira20">Discordo inteiramente</label>
+              </div>
+          </div>
+        </li>
+
+        <li>
+          <div class="container">
+          
+            <p class="pergunta">
+              As escolas públicas devem adaptar-se ao sistema de educação inclusiva.
+            </p>
+            <div class="input-group">
+              <div>
+                <input class="form-check-input clicavel desfavoraveis" type="radio" name="desfavoraveis5" id="desfavoraveis21" value="option1"  >
+                <label class="form-check-label" for="desfavoraveis21">Concordo inteiramente</label>
+              </div>
+              <div>
+                <input class="form-check-input clicavel desfavoraveis" type="radio" name="desfavoraveis5" id="desfavoraveis22" value="option2">
+                <label class="form-check-label" for="desfavoraveis22">Concordo mais ou menos</label>
+              </div>
+              <div>
+                <input class="form-check-input clicavel desfavoraveis" type="radio" name="desfavoraveis5" id="desfavoraveis23" value="option3">
+                <label class="form-check-label" for="desfavoraveis23">Nem concordo nem discordo</label>
+              </div>
+              <div>
+                <input class="form-check-input clicavel desfavoraveis" type="radio" name="desfavoraveis5" id="desfavoraveis24" value="option4">
+                <label class="form-check-label" for="desfavoraveis24">Discordo mais ou menos</label>
+              </div>
+              <div>
+                <input class="form-check-input clicavel desfavoraveis" type="radio" name="desfavoraveis5" id="desfavoraveis25" value="option5">
+                <label class="form-check-label" for="desfavoraveis25">Discordo inteiramente</label>
+              </div>
+          </div>
+        </li>
+
+        <li>
+          <div class="container">
+          
+            <p class="pergunta">
+              A participação de alunos diferentes, inclusive com deficiência, na mesma sala de aula, é benéfica para todos.
+            </p>
+            <div class="input-group">
+              <div>
+                <input class="form-check-input clicavel favoraveis" type="radio" name="favoraveis6" id="favoraveis26" value="option5"  >
+                <label class="form-check-label" for="favoraveis26">Concordo inteiramente</label>
+              </div>
+              <div>
+                <input class="form-check-input clicavel favoraveis" type="radio" name="favoraveis6" id="favoraveis27" value="option4">
+                <label class="form-check-label" for="favoraveis27">Concordo mais ou menos</label>
+              </div>
+              <div>
+                <input class="form-check-input clicavel favoraveis" type="radio" name="favoraveis6" id="favoraveis28" value="option3">
+                <label class="form-check-label" for="favoraveis28">Nem concordo nem discordo</label>
+              </div>
+              <div>
+                <input class="form-check-input clicavel favoraveis" type="radio" name="favoraveis6" id="favoraveis29" value="option2">
+                <label class="form-check-label" for="favoraveis29">Discordo mais ou menos</label>
+              </div>
+              <div>
+                <input class="form-check-input clicavel favoraveis" type="radio" name="favoraveis6" id="favoraveis30" value="option1">
+                <label class="form-check-label" for="favoraveis30">Discordo inteiramente</label>
+              </div>
+          </div>
+        </li>
+
+        <li>
+          <div class="container">
+          
+            <p class="pergunta">
+              Deve ser favorecida a convivência das pessoas com deficiência e sem deficiência.
+            </p>
+            <div class="input-group">
+              <div>
+                <input class="form-check-input clicavel favoraveis" type="radio" name="favoraveis7" id="favoraveis31" value="option5"  >
+                <label class="form-check-label" for="favoraveis31">Concordo inteiramente</label>
+              </div>
+              <div>
+                <input class="form-check-input clicavel favoraveis" type="radio" name="favoraveis7" id="favoraveis32" value="option4">
+                <label class="form-check-label" for="favoraveis32">Concordo mais ou menos</label>
+              </div>
+              <div>
+                <input class="form-check-input clicavel favoraveis" type="radio" name="favoraveis7" id="favoraveis33" value="option3">
+                <label class="form-check-label" for="favoraveis33">Nem concordo nem discordo</label>
+              </div>
+              <div>
+                <input class="form-check-input clicavel favoraveis" type="radio" name="favoraveis7" id="favoraveis44" value="option2">
+                <label class="form-check-label" for="favoraveis44">Discordo mais ou menos</label>
+              </div>
+              <div>
+                <input class="form-check-input clicavel favoraveis" type="radio" name="favoraveis7" id="favoraveis45" value="option1">
+                <label class="form-check-label" for="favoraveis45">Discordo inteiramente</label>
+              </div>
+          </div>
+        </li>
+
+        <li>
+          <div class="container">
+          
+            <p class="pergunta">
+              A educação inclusiva tem princípios democráticos e pluralistas, garantindo a igualdade de oportunidades educacionais a todos os alunos.
+            </p>
+            <div class="input-group">
+              <div>
+                <input class="form-check-input clicavel favoraveis" type="radio" name="favoraveis8" id="favoraveis46" value="option5"  >
+                <label class="form-check-label" for="favoraveis46">Concordo inteiramente</label>
+              </div>
+              <div>
+                <input class="form-check-input clicavel favoraveis" type="radio" name="favoraveis8" id="favoraveis47" value="option4">
+                <label class="form-check-label" for="favoraveis47">Concordo mais ou menos</label>
+              </div>
+              <div>
+                <input class="form-check-input clicavel favoraveis" type="radio" name="favoraveis8" id="favoraveis48" value="option3">
+                <label class="form-check-label" for="favoraveis48">Nem concordo nem discordo</label>
+              </div>
+              <div>
+                <input class="form-check-input clicavel favoraveis" type="radio" name="favoraveis8" id="favoraveis49" value="option2">
+                <label class="form-check-label" for="favoraveis49">Discordo mais ou menos</label>
+              </div>
+              <div>
+                <input class="form-check-input clicavel favoraveis" type="radio" name="favoraveis8" id="favoraveis50" value="option1">
+                <label class="form-check-label" for="favoraveis50">Discordo inteiramente</label>
+              </div>
+          </div>
+        </li>
+
+        <li>
+          <div class="container">
+          
+            <p class="pergunta">
+              Não é saudável a convivência de pessoas com deficiência com os normais.
+            </p>
+            <div class="input-group">
+              <div>
+                <input class="form-check-input clicavel desfavoraveis" type="radio" name="desfavoraveis9" id="desfavoraveis51" value="option1"  >
+                <label class="form-check-label" for="desfavoraveis51">Concordo inteiramente</label>
+              </div>
+              <div>
+                <input class="form-check-input clicavel desfavoraveis" type="radio" name="desfavoraveis9" id="desfavoraveis52" value="option2">
+                <label class="form-check-label" for="desfavoraveis52">Concordo mais ou menos</label>
+              </div>
+              <div>
+                <input class="form-check-input clicavel desfavoraveis" type="radio" name="desfavoraveis9" id="desfavoraveis53" value="option3">
+                <label class="form-check-label" for="desfavoraveis53">Nem concordo nem discordo</label>
+              </div>
+              <div>
+                <input class="form-check-input clicavel desfavoraveis" type="radio" name="desfavoraveis9" id="desfavoraveis54" value="option4">
+                <label class="form-check-label" for="desfavoraveis54">Discordo mais ou menos</label>
+              </div>
+              <div>
+                <input class="form-check-input clicavel desfavoraveis" type="radio" name="desfavoraveis9" id="desfavoraveis55" value="option5">
+                <label class="form-check-label" for="desfavoraveis55">Discordo inteiramente</label>
+              </div>
+          </div>
+        </li>
+
+        <li>
+          <div class="container">
+          
+            <p class="pergunta">
+              O aluno com deficiência tem o direito de receber apoio pedagógico como forma de responder às suas necessidades educacionais.
+            </p>
+            <div class="input-group">
+              <div>
+                <input class="form-check-input clicavel favoraveis" type="radio" name="favoraveis10" id="favoraveis56" value="option5"  >
+                <label class="form-check-label" for="favoraveis56">Concordo inteiramente</label>
+              </div>
+              <div>
+                <input class="form-check-input clicavel favoraveis" type="radio" name="favoraveis10" id="favoraveis57" value="option4">
+                <label class="form-check-label" for="favoraveis57">Concordo mais ou menos</label>
+              </div>
+              <div>
+                <input class="form-check-input clicavel favoraveis" type="radio" name="favoraveis10" id="favoraveis58" value="option3">
+                <label class="form-check-label" for="favoraveis58">Nem concordo nem discordo</label>
+              </div>
+              <div>
+                <input class="form-check-input clicavel favoraveis" type="radio" name="favoraveis10" id="favoraveis59" value="option2">
+                <label class="form-check-label" for="favoraveis59">Discordo mais ou menos</label>
+              </div>
+              <div>
+                <input class="form-check-input clicavel favoraveis" type="radio" name="favoraveis10" id="favoraveis60" value="option1">
+                <label class="form-check-label" for="favoraveis60">Discordo inteiramente</label>
+              </div>
+          </div>
+        </li>
+
+        <li>
+          <div class="container">
+          
+            <p class="pergunta">
+              Todos temos direitos e deveres apesar das diferenças.
+            </p>
+            <div class="input-group">
+              <div>
+                <input class="form-check-input clicavel favoraveis" type="radio" name="favoraveis11" id="favoraveis61" value="option5"  >
+                <label class="form-check-label" for="favoraveis61">Concordo inteiramente</label>
+              </div>
+              <div>
+                <input class="form-check-input clicavel favoraveis" type="radio" name="favoraveis11" id="favoraveis62" value="option4">
+                <label class="form-check-label" for="favoraveis62">Concordo mais ou menos</label>
+              </div>
+              <div>
+                <input class="form-check-input clicavel favoraveis" type="radio" name="favoraveis11" id="favoraveis63" value="option3">
+                <label class="form-check-label" for="favoraveis63">Nem concordo nem discordo</label>
+              </div>
+              <div>
+                <input class="form-check-input clicavel favoraveis" type="radio" name="favoraveis11" id="favoraveis64" value="option2">
+                <label class="form-check-label" for="favoraveis64">Discordo mais ou menos</label>
+              </div>
+              <div>
+                <input class="form-check-input clicavel favoraveis" type="radio" name="favoraveis11" id="favoraveis65" value="option1">
+                <label class="form-check-label" for="favoraveis65">Discordo inteiramente</label>
+              </div>
+          </div>
+        </li>
+
+        <li>
+          <div class="container">
+          
+            <p class="pergunta">
+              Os alunos com deficiência não devem frequentar classe comum.
+            </p>
+            <div class="input-group">
+              <div>
+                <input class="form-check-input clicavel desfavoraveis" type="radio" name="desfavoraveis12" id="desfavoraveis66" value="option1"  >
+                <label class="form-check-label" for="desfavoraveis66">Concordo inteiramente</label>
+              </div>
+              <div>
+                <input class="form-check-input clicavel desfavoraveis" type="radio" name="desfavoraveis12" id="desfavoraveis67" value="option2">
+                <label class="form-check-label" for="desfavoraveis67">Concordo mais ou menos</label>
+              </div>
+              <div>
+                <input class="form-check-input clicavel desfavoraveis" type="radio" name="desfavoraveis12" id="desfavoraveis68" value="option3">
+                <label class="form-check-label" for="desfavoraveis68">Nem concordo nem discordo</label>
+              </div>
+              <div>
+                <input class="form-check-input clicavel desfavoraveis" type="radio" name="desfavoraveis12" id="desfavoraveis69" value="option4">
+                <label class="form-check-label" for="desfavoraveis69">Discordo mais ou menos</label>
+              </div>
+              <div>
+                <input class="form-check-input clicavel desfavoraveis" type="radio" name="desfavoraveis12" id="desfavoraveis70" value="option5">
+                <label class="form-check-label" for="desfavoraveis70">Discordo inteiramente</label>
+              </div>
+          </div>
+        </li>
+
+        <li>
+          <div class="container">
+          
+            <p class="pergunta">
+              Pessoas com deficiência não devem chegar à universidade porque não têm condições de cumprir com os compromissos acadêmicos.
+            </p>
+            <div class="input-group">
+              <div>
+                <input class="form-check-input clicavel favoraveis" type="radio" name="favoraveis13" id="favoraveis71" value="option5"   >
+                <label class="form-check-label" for="favoraveis71">Concordo inteiramente</label>
+              </div>
+              <div>
+                <input class="form-check-input clicavel favoraveis" type="radio" name="favoraveis13" id="favoraveis72" value="option4">
+                <label class="form-check-label" for="favoraveis72">Concordo mais ou menos</label>
+              </div>
+              <div>
+                <input class="form-check-input clicavel favoraveis" type="radio" name="favoraveis13" id="favoraveis73" value="option3">
+                <label class="form-check-label" for="favoraveis73">Nem concordo nem discordo</label>
+              </div>
+              <div>
+                <input class="form-check-input clicavel favoraveis" type="radio" name="favoraveis13" id="favoraveis74" value="option2">
+                <label class="form-check-label" for="favoraveis74">Discordo mais ou menos</label>
+              </div>
+              <div>
+                <input class="form-check-input clicavel favoraveis" type="radio" name="favoraveis13" id="favoraveis75" value="option1">
+                <label class="form-check-label" for="favoraveis75">Discordo inteiramente</label>
+              </div>
+          </div>
+        </li>
+
+        <li>
+          <div class="container">
+          
+            <p class="pergunta">
+               A escola deve promover a convivência solidária entre os alunos com deficiência e sem deficiência.
+            </p>
+            <div class="input-group">
+              <div>
+                <input class="form-check-input clicavel mentira" type="radio" name="mentira14" id="mentira76" value="option0"  >
+                <label class="form-check-label" for="mentira76">Concordo inteiramente</label>
+              </div>
+              <div>
+                <input class="form-check-input clicavel mentira" type="radio" name="mentira14" id="mentira77" value="option0">
+                <label class="form-check-label" for="mentira77">Concordo mais ou menos</label>
+              </div>
+              <div>
+                <input class="form-check-input clicavel mentira" type="radio" name="mentira14" id="mentira78" value="option1">
+                <label class="form-check-label" for="mentira78">Nem concordo nem discordo</label>
+              </div>
+              <div>
+                <input class="form-check-input clicavel mentira" type="radio" name="mentira14" id="mentira79" value="option1">
+                <label class="form-check-label" for="mentira79">Discordo mais ou menos</label>
+              </div>
+              <div>
+                <input class="form-check-input clicavel mentira" type="radio" name="mentira14" id="mentira80" value="option1">
+                <label class="form-check-label" for="mentira80">Discordo inteiramente</label>
+              </div>
+          </div>
+        </li>
+
+        <li>
+          <div class="container">
+          
+            <p class="pergunta">
+              Os direitos de cidadania devem ser garantidos a todos.
+            </p>
+            <div class="input-group">
+              <div>
+                <input class="form-check-input clicavel desfavoraveis" type="radio" name="desfavoraveis15" id="desfavoraveis81" value="option1"  >
+                <label class="form-check-label" for="desfavoraveis81">Concordo inteiramente</label>
+              </div>
+              <div>
+                <input class="form-check-input clicavel desfavoraveis" type="radio" name="desfavoraveis15" id="desfavoraveis82" value="option2">
+                <label class="form-check-label" for="desfavoraveis82">Concordo mais ou menos</label>
+              </div>
+              <div>
+                <input class="form-check-input clicavel desfavoraveis" type="radio" name="desfavoraveis15" id="desfavoraveis83" value="option3">
+                <label class="form-check-label" for="desfavoraveis83">Nem concordo nem discordo</label>
+              </div>
+              <div>
+                <input class="form-check-input clicavel desfavoraveis" type="radio" name="desfavoraveis15" id="desfavoraveis84" value="option4">
+                <label class="form-check-label" for="desfavoraveis84">Discordo mais ou menos</label>
+              </div>
+              <div>
+                <input class="form-check-input clicavel desfavoraveis" type="radio" name="desfavoraveis15" id="desfavoraveis85" value="option5">
+                <label class="form-check-label" for="desfavoraveis85">Discordo inteiramente</label>
+              </div>
+          </div>
+        </li>
+
+        <li>
+          <div class="container">
+          
+            <p class="pergunta">
+              As sociedades, em geral, devem ser favoráveis à inclusão.
+            </p>
+            <div class="input-group">
+              <div>
+                <input class="form-check-input clicavel favoraveis" type="radio" name="favoraveis16" id="favoraveis86" value="option5"  >
+                <label class="form-check-label" for="favoraveis86">Concordo inteiramente</label>
+              </div>
+              <div>
+                <input class="form-check-input clicavel favoraveis" type="radio" name="favoraveis16" id="favoraveis87" value="option4">
+                <label class="form-check-label" for="favoraveis87">Concordo mais ou menos</label>
+              </div>
+              <div>
+                <input class="form-check-input clicavel favoraveis" type="radio" name="favoraveis16" id="favoraveis88" value="option3">
+                <label class="form-check-label" for="favoraveis88">Nem concordo nem discordo</label>
+              </div>
+              <div>
+                <input class="form-check-input clicavel favoraveis" type="radio" name="favoraveis16" id="favoraveis89" value="option2">
+                <label class="form-check-label" for="favoraveis89">Discordo mais ou menos</label>
+              </div>
+              <div>
+                <input class="form-check-input clicavel favoraveis" type="radio" name="favoraveis16" id="favoraveis90" value="option1">
+                <label class="form-check-label" for="favoraveis90">Discordo inteiramente</label>
+              </div>
+          </div>
+        </li>
+
+        <li>
+          <div class="container">
+          
+            <p class="pergunta">
+              A interação entre as pessoas com as mais variadas diferenças é sempre vantajosa para todos.
+            </p>
+            <div class="input-group">
+              <div>
+                <input class="form-check-input clicavel desfavoraveis" type="radio" name="desfavoraveis17" id="desfavoraveis91" value="option1"   >
+                <label class="form-check-label" for="desfavoraveis91">Concordo inteiramente</label>
+              </div>
+              <div>
+                <input class="form-check-input clicavel desfavoraveis" type="radio" name="desfavoraveis17" id="desfavoraveis92" value="option2">
+                <label class="form-check-label" for="desfavoraveis92">Concordo mais ou menos</label>
+              </div>
+              <div>
+                <input class="form-check-input clicavel desfavoraveis" type="radio" name="desfavoraveis17" id="desfavoraveis93" value="option3">
+                <label class="form-check-label" for="desfavoraveis93">Nem concordo nem discordo</label>
+              </div>
+              <div>
+                <input class="form-check-input clicavel desfavoraveis" type="radio" name="desfavoraveis17" id="desfavoraveis94" value="option4">
+                <label class="form-check-label" for="desfavoraveis94">Discordo mais ou menos</label>
+              </div>
+              <div>
+                <input class="form-check-input clicavel desfavoraveis" type="radio" name="desfavoraveis17" id="desfavoraveis95" value="option5">
+                <label class="form-check-label" for="desfavoraveis95">Discordo inteiramente</label>
+              </div>
+          </div>
+        </li>
+
+        <li>
+          <div class="container">
+          
+            <p class="pergunta">
+              Não há benefícios com a inclusão, ela prejudica tanto alunos com deficiência quanto os normais.            
+            </p>
+            <div class="input-group">
+              <div>
+                <input class="form-check-input clicavel mentira" type="radio" name="mentira18" id="mentira96" value="option0"  >
+                <label class="form-check-label" for="mentira96">Concordo inteiramente</label>
+              </div>
+              <div>
+                <input class="form-check-input clicavel mentira" type="radio" name="mentira18" id="mentira97" value="option0">
+                <label class="form-check-label" for="mentira97">Concordo mais ou menos</label>
+              </div>
+              <div>
+                <input class="form-check-input clicavel mentira" type="radio" name="mentira18" id="mentira98" value="option1">
+                <label class="form-check-label" for="mentira98">Nem concordo nem discordo</label>
+              </div>
+              <div>
+                <input class="form-check-input clicavel mentira" type="radio" name="mentira18" id="mentira99" value="option1">
+                <label class="form-check-label" for="mentira99">Discordo mais ou menos</label>
+              </div>
+              <div>
+                <input class="form-check-input clicavel mentira" type="radio" name="mentira18" id="mentira100" value="option1">
+                <label class="form-check-label" for="mentira100">Discordo inteiramente</label>
+              </div>
+          </div>
+        </li>
+
+        <li>
+          <div class="container">
+          
+            <p class="pergunta">
+              Aquele que é muito diferente deve ter seu próprio mundo.
+            </p>
+            <div class="input-group">
+              <div>
+                <input class="form-check-input clicavel desfavoraveis" type="radio" name="desfavoraveis19" id="desfavoraveis101" value="option1"  >
+                <label class="form-check-label" for="desfavoraveis101">Concordo inteiramente</label>
+              </div>
+              <div>
+                <input class="form-check-input clicavel desfavoraveis" type="radio" name="desfavoraveis19" id="desfavoraveis102" value="option2">
+                <label class="form-check-label" for="desfavoraveis102">Concordo mais ou menos</label>
+              </div>
+              <div>
+                <input class="form-check-input clicavel desfavoraveis" type="radio" name="desfavoraveis19" id="desfavoraveis103" value="option3">
+                <label class="form-check-label" for="desfavoraveis103">Nem concordo nem discordo</label>
+              </div>
+              <div>
+                <input class="form-check-input clicavel desfavoraveis" type="radio" name="desfavoraveis19" id="desfavoraveis104" value="option4">
+                <label class="form-check-label" for="desfavoraveis104">Discordo mais ou menos</label>
+              </div>
+              <div>
+                <input class="form-check-input clicavel desfavoraveis" type="radio" name="desfavoraveis19" id="desfavoraveis105" value="option5">
+                <label class="form-check-label" for="desfavoraveis105">Discordo inteiramente</label>
+              </div>
+          </div>
+        </li>
+
+        <li>
+          <div class="container">
+          
+            <p class="pergunta">
+              As universidades devem ter garantida a autonomia de somente atender a alunos que possam adequar-se à sua estrutura em todos os aspectos.
+            </p>
+            <div class="input-group">
+              <div>
+                <input class="form-check-input clicavel mentira" type="radio" name="mentira20" id="mentira106" value="option0"  >
+                <label class="form-check-label" for="mentira106">Concordo inteiramente</label>
+              </div>
+              <div>
+                <input class="form-check-input clicavel mentira" type="radio" name="mentira20" id="mentira107" value="option0">
+                <label class="form-check-label" for="mentira107">Concordo mais ou menos</label>
+              </div>
+              <div>
+                <input class="form-check-input clicavel mentira" type="radio" name="mentira20" id="mentira108" value="option1">
+                <label class="form-check-label" for="mentira108">Nem concordo nem discordo</label>
+              </div>
+              <div>
+                <input class="form-check-input clicavel mentira" type="radio" name="mentira20" id="mentira109" value="option1">
+                <label class="form-check-label" for="mentira109">Discordo mais ou menos</label>
+              </div>
+              <div>
+                <input class="form-check-input clicavel mentira" type="radio" name="mentira20" id="mentira110" value="option1">
+                <label class="form-check-label" for="mentira110">Discordo inteiramente</label>
+              </div>
+          </div>
+        </li>
+
+        <li>
+          <div class="container">
+          
+            <p class="pergunta">
+              A sociedade deve exigir que as pessoas com deficiência sejam atendidas em seus direitos.
+            </p>
+            <div class="input-group">
+              <div>
+                <input class="form-check-input clicavel favoraveis" type="radio" name="favoraveis21" id="favoraveis111" value="option5"  >
+                <label class="form-check-label" for="favoraveis111">Concordo inteiramente</label>
+              </div>
+              <div>
+                <input class="form-check-input clicavel favoraveis" type="radio" name="favoraveis21" id="favoraveis112" value="option4">
+                <label class="form-check-label" for="favoraveis112">Concordo mais ou menos</label>
+              </div>
+              <div>
+                <input class="form-check-input clicavel favoraveis" type="radio" name="favoraveis21" id="favoraveis113" value="option3">
+                <label class="form-check-label" for="favoraveis113">Nem concordo nem discordo</label>
+              </div>
+              <div>
+                <input class="form-check-input clicavel favoraveis" type="radio" name="favoraveis21" id="favoraveis114" value="option2">
+                <label class="form-check-label" for="favoraveis114">Discordo mais ou menos</label>
+              </div>
+              <div>
+                <input class="form-check-input clicavel favoraveis" type="radio" name="favoraveis21" id="favoraveis115" value="option1">
+                <label class="form-check-label" for="favoraveis115">Discordo inteiramente</label>
+              </div>
+          </div>
+        </li>
+
+        <li>
+          <div class="container">
+          
+            <p class="pergunta">
+              Os alunos com deficiência auditiva possuem diferenças significativas que os impedem de aprender junto com os alunos sem deficiência.
+            </p>
+            <div class="input-group">
+              <div>
+                <input class="form-check-input clicavel favoraveis" type="radio" name="favoraveis22" id="favoraveis116" value="option5"  >
+                <label class="form-check-label" for="favoraveis116">Concordo inteiramente</label>
+              </div>
+              <div>
+                <input class="form-check-input clicavel favoraveis" type="radio" name="favoraveis22" id="favoraveis117" value="option4">
+                <label class="form-check-label" for="favoraveis117">Concordo mais ou menos</label>
+              </div>
+              <div>
+                <input class="form-check-input clicavel favoraveis" type="radio" name="favoraveis22" id="favoraveis118" value="option3">
+                <label class="form-check-label" for="favoraveis118">Nem concordo nem discordo</label>
+              </div>
+              <div>
+                <input class="form-check-input clicavel favoraveis" type="radio" name="favoraveis22" id="favoraveis119" value="option2">
+                <label class="form-check-label" for="favoraveis119">Discordo mais ou menos</label>
+              </div>
+              <div>
+                <input class="form-check-input clicavel favoraveis" type="radio" name="favoraveis22" id="favoraveis120" value="option1">
+                <label class="form-check-label" for="favoraveis120">Discordo inteiramente</label>
+              </div>
+          </div>
+        </li>
+
+        <li>
+          <div class="container">
+          
+            <p class="pergunta">
+              O melhor local de atendimento educacional para a pessoa com deficiência é na instituição especializada.
+            </p>
+            <div class="input-group">
+              <div>
+                <input class="form-check-input clicavel desfavoraveis" type="radio" name="desfavoraveis23" id="desfavoraveis121" value="option1"   >
+                <label class="form-check-label" for="desfavoraveis121">Concordo inteiramente</label>
+              </div>
+              <div>
+                <input class="form-check-input clicavel desfavoraveis" type="radio" name="desfavoraveis23" id="desfavoraveis122" value="option2">
+                <label class="form-check-label" for="desfavoraveis122">Concordo mais ou menos</label>
+              </div>
+              <div>
+                <input class="form-check-input clicavel desfavoraveis" type="radio" name="desfavoraveis23" id="desfavoraveis123" value="option3">
+                <label class="form-check-label" for="desfavoraveis123">Nem concordo nem discordo</label>
+              </div>
+              <div>
+                <input class="form-check-input clicavel desfavoraveis" type="radio" name="desfavoraveis23" id="desfavoraveis124" value="option4">
+                <label class="form-check-label" for="desfavoraveis124">Discordo mais ou menos</label>
+              </div>
+              <div>
+                <input class="form-check-input clicavel desfavoraveis" type="radio" name="desfavoraveis23" id="desfavoraveis125" value="option5">
+                <label class="form-check-label" for="desfavoraveis125">Discordo inteiramente</label>
+              </div>
+          </div>
+        </li>
+
+        <li>
+          <div class="container">
+          
+            <p class="pergunta">
+              Todas as pessoas com deficiência, independentemente do grau de comprometimento, devem ter garantidos os seus direitos de cidadania.
+            </p>
+            <div class="input-group">
+              <div>
+                <input class="form-check-input clicavel desfavoraveis" type="radio" name="desfavoraveis24" id="desfavoraveis126" value="option1"   >
+                <label class="form-check-label" for="desfavoraveis126">Concordo inteiramente</label>
+              </div>
+              <div>
+                <input class="form-check-input clicavel desfavoraveis" type="radio" name="desfavoraveis24" id="desfavoraveis127" value="option2">
+                <label class="form-check-label" for="desfavoraveis127">Concordo mais ou menos</label>
+              </div>
+              <div>
+                <input class="form-check-input clicavel desfavoraveis" type="radio" name="desfavoraveis24" id="desfavoraveis128" value="option3">
+                <label class="form-check-label" for="desfavoraveis128">Nem concordo nem discordo</label>
+              </div>
+              <div>
+                <input class="form-check-input clicavel desfavoraveis" type="radio" name="desfavoraveis24" id="desfavoraveis129" value="option4">
+                <label class="form-check-label" for="desfavoraveis129">Discordo mais ou menos</label>
+              </div>
+              <div>
+                <input class="form-check-input clicavel desfavoraveis" type="radio" name="desfavoraveis24" id="desfavoraveis130" value="option5">
+                <label class="form-check-label" for="desfavoraveis130">Discordo inteiramente</label>
+              </div>
+          </div>
+        </li>
+        <li>
+          <div class="container">
+          
+            <p class="pergunta">
+              O direito ao atendimento das necessidades básicas deve ser assegurado a todos.
+            </p>
+            <div class="input-group">
+              <div>
+                <input class="form-check-input clicavel favoraveis" type="radio" name="favoraveis25" id="favoraveis131" value="option5"  >
+                <label class="form-check-label" for="favoraveis131">Concordo inteiramente</label>
+              </div>
+              <div>
+                <input class="form-check-input clicavel favoraveis" type="radio" name="favoraveis25" id="favoraveis132" value="option4">
+                <label class="form-check-label" for="favoraveis132">Concordo mais ou menos</label>
+              </div>
+              <div>
+                <input class="form-check-input clicavel favoraveis" type="radio" name="favoraveis25" id="favoraveis133" value="option3">
+                <label class="form-check-label" for="favoraveis133">Nem concordo nem discordo</label>
+              </div>
+              <div>
+                <input class="form-check-input clicavel favoraveis" type="radio" name="favoraveis25" id="favoraveis134" value="option2">
+                <label class="form-check-label" for="favoraveis134">Discordo mais ou menos</label>
+              </div>
+              <div>
+                <input class="form-check-input clicavel favoraveis" type="radio" name="favoraveis25" id="favoraveis135" value="option1">
+                <label class="form-check-label" for="favoraveis135">Discordo inteiramente</label>
+              </div>
+          </div>
+        </li>
+         <li>
+          <div class="container">
+          
+            <p class="pergunta">
+              Uma sociedade inclusiva deve estar estruturada para atender as necessidades de todos os cidadãos, por mais diferentes que sejam.
+            </p>
+            <div class="input-group">
+              <div>
+                <input class="form-check-input clicavel favoraveis" type="radio" name="favoraveis26" id="favoraveis136" value="option5"  >
+                <label class="form-check-label" for="favoraveis136">Concordo inteiramente</label>
+              </div>
+              <div>
+                <input class="form-check-input clicavel favoraveis" type="radio" name="favoraveis26" id="favoraveis137" value="option4">
+                <label class="form-check-label" for="favoraveis137">Concordo mais ou menos</label>
+              </div>
+              <div>
+                <input class="form-check-input clicavel favoraveis" type="radio" name="favoraveis26" id="favoraveis138" value="option3">
+                <label class="form-check-label" for="favoraveis138">Nem concordo nem discordo</label>
+              </div>
+              <div>
+                <input class="form-check-input clicavel favoraveis" type="radio" name="favoraveis26" id="favoraveis139" value="option2">
+                <label class="form-check-label" for="favoraveis139">Discordo mais ou menos</label>
+              </div>
+              <div>
+                <input class="form-check-input clicavel favoraveis" type="radio" name="favoraveis26" id="favoraveis140" value="option1">
+                <label class="form-check-label" for="favoraveis140">Discordo inteiramente</label>
+              </div>
+          </div>
+        </li>
+
+        <li>
+          <div class="container">
+          
+            <p class="pergunta">
+              Os alunos com deficiência mental possuem diferenças significativas que os impedem de aprender junto com os alunos sem deficiência.
+            </p>
+           <div class="input-group">
+              <div>
+                <input class="form-check-input clicavel desfavoraveis" type="radio" name="desfavoraveis27" id="desfavoraveis141" value="option1"  >
+                <label class="form-check-label" for="desfavoraveis141">Concordo inteiramente</label>
+              </div>
+              <div>
+                <input class="form-check-input clicavel desfavoraveis" type="radio" name="desfavoraveis27" id="desfavoraveis143" value="option2">
+                <label class="form-check-label" for="desfavoraveis142">Concordo mais ou menos</label>
+              </div>
+              <div>
+                <input class="form-check-input clicavel desfavoraveis" type="radio" name="desfavoraveis27" id="desfavoraveis143" value="option3">
+                <label class="form-check-label" for="desfavoraveis143">Nem concordo nem discordo</label>
+              </div>
+              <div>
+                <input class="form-check-input clicavel desfavoraveis" type="radio" name="desfavoraveis27" id="desfavoraveis144" value="option4">
+                <label class="form-check-label" for="desfavoraveis144">Discordo mais ou menos</label>
+              </div>
+              <div>
+                <input class="form-check-input clicavel desfavoraveis" type="radio" name="desfavoraveis27" id="desfavoraveis145" value="option5">
+                <label class="form-check-label" for="desfavoraveis145">Discordo inteiramente</label>
+              </div>
+          </div>
+        </li>
+
+        <li>
+          <div class="container">
+          
+            <p class="pergunta">
+              Não devem ser atendidos os alunos surdos no ensino universitário, uma vez que não são oferecidos serviços de apoio.
+            </p>
+            <div class="input-group">
+              <div>
+                <input class="form-check-input clicavel mentira" type="radio" name="mentira28" id="mentira146" value="option0"  >
+                <label class="form-check-label" for="mentira146">Concordo inteiramente</label>
+              </div>
+              <div>
+                <input class="form-check-input clicavel mentira" type="radio" name="mentira28" id="mentira147" value="option0">
+                <label class="form-check-label" for="mentira147">Concordo mais ou menos</label>
+              </div>
+              <div>
+                <input class="form-check-input clicavel mentira" type="radio" name="mentira28" id="mentira148" value="option1">
+                <label class="form-check-label" for="mentira148">Nem concordo nem discordo</label>
+              </div>
+              <div>
+                <input class="form-check-input clicavel mentira" type="radio" name="mentira28" id="mentira149" value="option1">
+                <label class="form-check-label" for="mentira149">Discordo mais ou menos</label>
+              </div>
+              <div>
+                <input class="form-check-input clicavel mentira" type="radio" name="mentira28" id="mentira150" value="option1">
+                <label class="form-check-label" for="mentira150">Discordo inteiramente</label>
+              </div>
+          </div>
+        </li>
+
+        <li>
+          <div class="container">
+          
+            <p class="pergunta">
+              O aluno com deficiência deve ter direito às mesmas oportunidades de emprego que os demais cidadãos.
+            </p>
+            <div class="input-group">
+              <div>
+                <input class="form-check-input clicavel desfavoraveis" type="radio" name="desfavoraveis29" id="desfavoraveis151" value="option1"  >
+                <label class="form-check-label" for="desfavoraveis151">Concordo inteiramente</label>
+              </div>
+              <div>
+                <input class="form-check-input clicavel desfavoraveis" type="radio" name="desfavoraveis29" id="desfavoraveis152" value="option2">
+                <label class="form-check-label" for="desfavoraveis152">Concordo mais ou menos</label>
+              </div>
+              <div>
+                <input class="form-check-input clicavel desfavoraveis" type="radio" name="desfavoraveis29" id="desfavoraveis153" value="option3">
+                <label class="form-check-label" for="desfavoraveis153">Nem concordo nem discordo</label>
+              </div>
+              <div>
+                <input class="form-check-input clicavel desfavoraveis" type="radio" name="desfavoraveis29" id="desfavoraveis154" value="option4">
+                <label class="form-check-label" for="desfavoraveis154">Discordo mais ou menos</label>
+              </div>
+              <div>
+                <input class="form-check-input clicavel desfavoraveis" type="radio" name="desfavoraveis29" id="desfavoraveis160" value="option5">
+                <label class="form-check-label" for="desfavoraveis160">Discordo inteiramente</label>
+              </div>
+          </div>
+        </li>
+        <li>
+          <div class="container">
+          
+            <p class="pergunta">
+              As universidades não devem adaptar seus recursos para o atendimento de alunos com deficiências.
+            </p>
+            <div class="input-group">
+              <div>
+                <input class="form-check-input clicavel favoraveis" type="radio" name="favoraveis30" id="favoraveis161" value="option5"   >
+                <label class="form-check-label" for="favoraveis161">Concordo inteiramente</label>
+              </div>
+              <div>
+                <input class="form-check-input clicavel favoraveis" type="radio" name="favoraveis30" id="favoraveis162" value="option4">
+                <label class="form-check-label" for="favoraveis162">Concordo mais ou menos</label>
+              </div>
+              <div>
+                <input class="form-check-input clicavel favoraveis" type="radio" name="favoraveis30" id="favoraveis163" value="option3">
+                <label class="form-check-label" for="favoraveis163">Nem concordo nem discordo</label>
+              </div>
+              <div>
+                <input class="form-check-input clicavel favoraveis" type="radio" name="favoraveis30" id="favoraveis164" value="option2">
+                <label class="form-check-label" for="favoraveis164">Discordo mais ou menos</label>
+              </div>
+              <div>
+                <input class="form-check-input clicavel favoraveis" type="radio" name="favoraveis30" id="favoraveis165" value="option1">
+                <label class="form-check-label" for="favoraveis165">Discordo inteiramente</label>
+              </div>
+          </div>
+        </li>
+        <li>
+          <div class="container">
+          
+            <p class="pergunta">
+              Não existe nenhuma possibilidade de troca de experiências positivas entre aluno comum e aluno especial.
+            </p>
+            <div class="input-group">
+              <div>
+                <input class="form-check-input clicavel desfavoraveis" type="radio" name="desfavoraveis31" id="Administrativo166" value="option1"   >
+                <label class="form-check-label" for="desfavoraveis166">Concordo inteiramente</label>
+              </div>
+              <div>
+                <input class="form-check-input clicavel desfavoraveis" type="radio" name="desfavoraveis31" id="desfavoraveis167" value="option2">
+                <label class="form-check-label" for="desfavoraveis167">Concordo mais ou menos</label>
+              </div>
+              <div>
+                <input class="form-check-input clicavel desfavoraveis" type="radio" name="desfavoraveis31" id="desfavoraveis168" value="option3">
+                <label class="form-check-label" for="desfavoraveis168">Nem concordo nem discordo</label>
+              </div>
+              <div>
+                <input class="form-check-input clicavel desfavoraveis" type="radio" name="desfavoraveis31" id="desfavoraveis169" value="option4">
+                <label class="form-check-label" for="desfavoraveis169">Discordo mais ou menos</label>
+              </div>
+              <div>
+                <input class="form-check-input clicavel desfavoraveis" type="radio" name="desfavoraveis31" id="desfavoraveis170" value="option5">
+                <label class="form-check-label" for="desfavoraveis170">Discordo inteiramente</label>
+              </div>
+          </div>
+        </li>
+        <li>
+          <div class="container">
+          
+            <p class="pergunta">
+              O serviço de apoio ao educando com deficiência para a implantação de uma pedagogia inclusiva é um gasto injustificado.
+            </p>
+            <div class="input-group">
+              <div>
+                <input class="form-check-input clicavel favoraveis" type="radio" name="favoraveis32" id="favoraveis171" value="option5"   >
+                <label class="form-check-label" for="favoraveis171">Concordo inteiramente</label>
+              </div>
+              <div>
+                <input class="form-check-input clicavel favoraveis" type="radio" name="favoraveis32" id="favoraveis172" value="option4">
+                <label class="form-check-label" for="favoraveis172">Concordo mais ou menos</label>
+              </div>
+              <div>
+                <input class="form-check-input clicavel favoraveis" type="radio" name="favoraveis32" id="favoraveis173" value="option3">
+                <label class="form-check-label" for="favoraveis173">Nem concordo nem discordo</label>
+              </div>
+              <div>
+                <input class="form-check-input clicavel favoraveis" type="radio" name="favoraveis32" id="favoraveis174" value="option2">
+                <label class="form-check-label" for="favoraveis174">Discordo mais ou menos</label>
+              </div>
+              <div>
+                <input class="form-check-input clicavel favoraveis" type="radio" name="favoraveis32" id="favoraveis175" value="option1">
+                <label class="form-check-label" for="favoraveis175">Discordo inteiramente</label>
+              </div>
+          </div>
+        </li>
+        <li>
+          <div class="container">
+          
+            <p class="pergunta">
+              As escolas particulares devem adaptar seus recursos para o atendimento de alunos com deficiência.
+            </p>
+            <div class="input-group">
+              <div>
+                <input class="form-check-input clicavel desfavoraveis" type="radio" name="desfavoraveis33" id="Administrativo176" value="option1"   >
+                <label class="form-check-label" for="desfavoraveis176">Concordo inteiramente</label>
+              </div>
+              <div>
+                <input class="form-check-input clicavel desfavoraveis" type="radio" name="desfavoraveis33" id="desfavoraveis177" value="option2">
+                <label class="form-check-label" for="desfavoraveis177">Concordo mais ou menos</label>
+              </div>
+              <div>
+                <input class="form-check-input clicavel desfavoraveis" type="radio" name="desfavoraveis33" id="desfavoraveis178" value="option3">
+                <label class="form-check-label" for="desfavoraveis178">Nem concordo nem discordo</label>
+              </div>
+              <div>
+                <input class="form-check-input clicavel desfavoraveis" type="radio" name="desfavoraveis33" id="desfavoraveis179" value="option4">
+                <label class="form-check-label" for="desfavoraveis179">Discordo mais ou menos</label>
+              </div>
+              <div>
+                <input class="form-check-input clicavel desfavoraveis" type="radio" name="desfavoraveis33" id="desfavoraveis180" value="option5">
+                <label class="form-check-label" for="desfavoraveis180">Discordo inteiramente</label>
+              </div>
+          </div>
+        </li>
+        <li>
+          <div class="container">
+          
+            <p class="pergunta">
+              O sistema de saúde deve estar preparado para atender com qualidade toda e qualquer pessoa que necessita de seus serviços.
+            </p>
+            <div class="input-group">
+              <div>
+                <input class="form-check-input clicavel desfavoraveis" type="radio" name="desfavoraveis34" id="Administrativo181" value="option1"   >
+                <label class="form-check-label" for="desfavoraveis181">Concordo inteiramente</label>
+              </div>
+              <div>
+                <input class="form-check-input clicavel desfavoraveis" type="radio" name="desfavoraveis34" id="desfavoraveis182" value="option2">
+                <label class="form-check-label" for="desfavoraveis182">Concordo mais ou menos</label>
+              </div>
+              <div>
+                <input class="form-check-input clicavel desfavoraveis" type="radio" name="desfavoraveis34" id="desfavoraveis183" value="option3">
+                <label class="form-check-label" for="desfavoraveis183">Nem concordo nem discordo</label>
+              </div>
+              <div>
+                <input class="form-check-input clicavel desfavoraveis" type="radio" name="desfavoraveis34" id="desfavoraveis184" value="option4">
+                <label class="form-check-label" for="desfavoraveis184">Discordo mais ou menos</label>
+              </div>
+              <div>
+                <input class="form-check-input clicavel desfavoraveis" type="radio" name="desfavoraveis34" id="desfavoraveis185" value="option5">
+                <label class="form-check-label" for="desfavoraveis185">Discordo inteiramente</label>
+              </div>
+          </div>
+        </li>
+        <li>
+          <div class="container">
+          
+            <p class="pergunta">
+              A reforma agrária é uma medida necessária para a construção de uma sociedade inclusiva.
+            </p>
+            <div class="input-group">
+              <div>
+                <input class="form-check-input clicavel desfavoraveis" type="radio" name="desfavoraveis35" id="desfavoraveis186" value="option1"   >
+                <label class="form-check-label" for="desfavoraveis186">Concordo inteiramente</label>
+              </div>
+              <div>
+                <input class="form-check-input clicavel desfavoraveis" type="radio" name="desfavoraveis35" id="desfavoraveis187" value="option2">
+                <label class="form-check-label" for="desfavoraveis187">Concordo mais ou menos</label>
+              </div>
+              <div>
+                <input class="form-check-input clicavel desfavoraveis" type="radio" name="desfavoraveis35" id="desfavoraveis188" value="option3">
+                <label class="form-check-label" for="desfavoraveis188">Nem concordo nem discordo</label>
+              </div>
+              <div>
+                <input class="form-check-input clicavel desfavoraveis" type="radio" name="desfavoraveis35" id="desfavoraveis189" value="option4">
+                <label class="form-check-label" for="desfavoraveis189">Discordo mais ou menos</label>
+              </div>
+              <div>
+                <input class="form-check-input clicavel desfavoraveis" type="radio" name="desfavoraveis35" id="desfavoraveis190" value="option5">
+                <label class="form-check-label" for="desfavoraveis190">Discordo inteiramente</label>
+              </div>
+          </div>
+        </li>
+
+      </ol>
+
+      <p class="mensagem-erro">Você precisa responder a todas as perguntas para avançar para a próxima etapa! Verifique suas respostas e tente novamente.</p>
+
+      <div id="navPerguntas" class="container flex-column flex-wrap">
+        <div class="inicio">
+          <button type="button" class="btn btn-outline-primary voltarEtapa">Voltar</button>
+          <button type="button" class="btn btn-outline-primary voltarPergunta"><i class="material-icons">arrow_back</i></button>
+          <button type="button" class="btn btn-primary avancarPergunta"><i class="material-icons">arrow_forward</i></button>
+          <button type="button" class="btn btn-primary avancarEtapa">Ver resultado</button>
+        </div>
+        <div class="barra-progresso">
+          <div></div>
+        </div>
+      </div>
+
+      <div id="navOrientada" class="container d-flex flex-column flex-md-row justify-content-around">
+        <button type="button" class="btn btn-outline-primary voltarEtapa">Voltar</button>
+        <button type="button" class="btn btn-primary avancarEtapa">Ver resultado</button>
+      </div>
+    </div>
+
+    <!-- Análise do Resultado -->
+<div class="container-fluid text-center etapa" id="analise">
+  <div class="cabecalho">
+      <h2>RESULTADO</h2><br>
+  </div>
+      <div>
+        <div class="print" style="padding-right: 3%; padding-left: 3%;">
+           <p><b style="color: #ff6600">Enunciados Favoráveis:</b> Referem-se as atitudes favoráveis em relação à inclusão, ou seja, é o que almejamos na construção de instituições na perspectiva inclusiva, a valorização da diversidade e inclusão.</p>
+           <p><b style="color: #ff6600">Enunciados Desfavoráveis:</b> Retratam que o respondente não é favorável aos princípios da inclusão e suas atitudes são desfavoráveis em relação à perspectiva inclusiva.</p>
+        </div>
+      </div>
+      <div class="container">
+          <div class="row quadro text-center" style="margin-bottom: 2%;">
+            <div class="col-sm-12">
+              <div class="flex-grow-1 contorno9">
+                <p style="margin-bottom: 0.5rem;color: #ff6600;">Enunciados Favoráveis</p>
+                  <div class="grafico d-flex"><div class="pontos" style="padding-right: 1%;">15</div>
+                    <div class="barra-progresso9">
+                      <div style="display: flex; align-items: center; justify-content: center;"></div>
+                    </div>
+                  <div class="pontos" style="padding-left: 1%;">75</div></div>
+              </div>
+            </div>
+          </div>
+          <div class="row quadro text-center" style="margin-bottom: 2%;">
+            <div class="col-sm-12">
+              <div class="flex-grow-1 contorno10">
+                <p style="margin-bottom: 0.5rem; color: #ff6600">Enunciados Desfavoráveis</p>
+                <div class="grafico d-flex" style="position: relative;"><div class="pontos" style="padding-right: 1%;">15</div>
+                  <div class="barra-progresso10">
+                    <div style="display: flex; align-items: center; justify-content: center;"></div>
+                  </div>
+               <div class="pontos" style="padding-left: 1%;">75</div> </div>
+              </div>
+            </div>
+          </div>  
+        </div>         
+      <div id="navPerguntas" class="container flex-column flex-wrap">
+        <div class="inicio">
+          <button type="button" class="btn btn-outline-primary voltarEtapa4">Questionário</button>
+          <button type="button" class="btn btn-primary avancarEtapa5">Voltar ao início</button>
+        </div>
+      </div>
+
+      <div id="navOrientada" class="container d-flex flex-column flex-md-row justify-content-around">
+        <button type="button" class="btn btn-outline-primary voltarEtapa4">Questionário</button>
+        <button type="button" class="btn btn-primary avancarEtapa5">Voltar ao início</button>
+      </div>
+</div>
+
+    
+
+</main>
+
+
+  <!-- Rodapé -->
+  <footer>
+    <div class="container d-flex justify-content-between align-items-center">
+
+      <div class="cred-rea">
+
+        <!-- Comente em caso de adaptação do REA -->
+        <p>
+          <span>Recurso Educacional Aberto (REA) desenvolvido pela <a href="https://univesp.br/" target="blank">Univesp</a>, disponível sob licença <a href="http://apps.univesp.br/common/license_MIT_2019.txt" target="_blank">MIT</a>.
+          Você pode utilizá-lo, compartilhá-lo e modificá-lo.</span>
+          <span><button class="btn btn-link" data-toggle="modal" data-target="#creditos">Créditos</button></span>.
+        <p>
+        <!-- Descomente em caso de adaptação do REA -->
+        <!-- <p>
+          <span>Recurso Educacional Aberto (REA) adaptado por SEU NOME.</span>
+          <span><a href="#">Versão original da Univesp</a></span>
+        </p> -->
+      </div>
+
+      <div class="aval-rea d-flex">
+        <!-- Atualizar "Nome+do+Recurso" -->
+        <a class="btn btn-secondary" href="https://forms.office.com/r/YTb7v5V6GV" target="_blank">Avaliar este recurso</a>
+        <!-- Atualizar "Nome+do+Recurso" -->
+        <a class="btn btn-secondary" href="https://forms.office.com/r/BU3heRJ9ZP" target="_blank">Reportar erro</a>
+      </div>
+
+    </div>
+  </footer>
+  <!-- Fim do rodapé -->
+
+  <!-- Fim da div .esconder-tela-pequena
+  Utilizar essa div caso o REA não se adapte a todos os formatos de tela -->
+  <!-- </div> -->
+
+  <!-- AVISO =+960px -->
+  <!-- Utilizar caso o REA possua limitações quanto aos tamanhos de tela
+  Caso contrário, deletar -->
+  <!-- <div class= "container d-lg-none text-center">
+    <div class="container">
+      <a href="https://univesp.br/" target="_blank">
+        <img src="https://apps.univesp.br/common/logo-univesp-positivo.svg" alt="Logo da Univesp" height="47px" width="135px" class='img-responsive center-block' style="margin-top:4rem">
+      </a>
+    </div>
+    <img src='https://apps.univesp.br/common/aviso-tela.gif' alt="Computador Animado" height="117px" width="160px" class='img-responsive center-block' style="margin-top:3rem">
+    <div style="margin-top:.5rem">
+      <p>
+        <font style=font-family:"Barlow" color="#3b78d1" 'text-center' size="10rem"><b>OPS!</b></font>
+      </p>
+      <p>
+        <font style=font-family:"Verdana" "text-center" size="3rem">Visualize este recurso em um computador, em janela com largura mínima de 992px.</font>
+      </p>
+    </div>
+  </div> -->
+
+  <!-- Créditos -->
+  <div class="modal fade" id="creditos" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered" role="document">
+      <div class="modal-content">
+        <div class="modal-body">
+
+          <h6>Governo do Estado de São Paulo</h6>
+          <p>Secretaria de Desenvolvimento Econômico</p>
+
+          <h6>UNIVERSIDADE VIRTUAL DO ESTADO DE SÃO PAULO – UNIVESP</h6>
+          <!--<p><span class="funcao">Presidente</span>Fernanda Gouveia</p>-->
+          <p><span class="funcao">Presidente</span>Rodolfo Jardim de Azevedo</p>
+          <p><span class="funcao">Diretora Acadêmica</span>Simone Telles Martins Ramos</p>
+          <p><span class="funcao">Diretor Administrativo</span>Leonardo Augusto Amaral Terra</p>
+
+          <h6>Equipe</h6>
+          <p><span class="funcao">Docente responsável</span>Vera Lúcia Messias Fialho Capellini</p>
+          <p><span class="funcao">Ilustração</span>Celso Lourenço</p>
+          <p><span class="funcao">Layout</span>Celso de Oliveira</p>
+          <p><span class="funcao">Programação</span>Celso de Oliveira</p>
+          <p><span class="funcao">Planejamento e Design Instrucional</span>Natália de Oliveira Fernandes</p>
+
+
+        </div>
+        <div class="modal-footer">
+          <p>Junho/2019</p>
+          <button type="button" class="btn btn-secondary" data-dismiss="modal">Fechar</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Arquivos Bootstrap -->
+  <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+  <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+  <script src="https://apps.univesp.br/common/jquery-ui-touch-punch.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js" integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js" integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k" crossorigin="anonymous"></script>
+
+  <!-- jsSocials -->
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/jquery.jssocials/1.4.0/jssocials.min.js"></script>
+  <script>
+  var share = $("#share-buttons");
+  var page_title = $(document).attr('title');
+  var page_url = window.location.href;
+  share.jsSocials({
+    shares: [
+      {
+        share: "facebook",
+        label: "Facebook",
+        logo: "fab fa-facebook-f",
+      },
+      {
+        share: "twitter",
+        label: "Twitter",
+        logo: "fab fa-twitter",
+      },
+      {
+        share: "whatsapp",
+        label: "Whatsapp",
+        logo: "fab fa-whatsapp",
+      },
+    ],
+    url: page_url,
+    text: 'Confira o REA ' + page_title + '.',
+    showLabel: true,
+    showCount: false,
+    shareIn: "popup",
+  });
+  </script>
+
+
+  <!-- Sticky Kit -->
+  <script type="text/javascript" src="javascripts/stickykit-min.js"></script>
+
+  <!-- Custom JS -->
+  <script type="text/javascript" src="javascripts/events.js"></script>
+  <!--<script type="text/javascript" src="javascripts/canvas.js"></script>-->
+
+  <!-- MathJax. Descomente se for utilizar. Caso contrário, remova. -->
+  <!-- <script type="text/javascript" async src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/MathJax.js?config=TeX-MML-AM_CHTML"></script> -->
+
+  <!-- Analytics. Remova em caso de reutilização do REA -->
+  <script src="https://apps.univesp.br/common/analytics.js"></script>
+
+</body>
+
+</html>
